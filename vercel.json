@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "builds": [{ "src": "server.js", "use": "@vercel/node" }],
+  "routes": [
+    { "src": "/apps/cd-quote", "dest": "/server.js" },
+    { "src": "/health", "dest": "/server.js" }
+  ]
+}
